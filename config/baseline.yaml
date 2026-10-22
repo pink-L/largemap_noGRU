@@ -1,0 +1,662 @@
+task:
+  env:
+    num_envs: 1024
+    env_spacing: 0
+    max_episode_length: 3200
+  sim:
+    dt: 0.002
+    substeps: 5
+    gravity:
+    - 0
+    - 0
+    - -9.81
+    replicate_physics: false
+    use_flatcache: true
+    use_gpu_pipeline: true
+    device: cuda:0
+    solver_type: 1
+    use_gpu: true
+    bounce_threshold_velocity: 0.2
+    friction_offset_threshold: 0.04
+    friction_correlation_distance: 0.025
+    enable_stabilization: true
+    gpu_max_rigid_contact_count: 2097152
+    gpu_max_rigid_patch_count: 2097152
+    gpu_found_lost_pairs_capacity: 4194304
+    gpu_found_lost_aggregate_pairs_capacity: 33554432
+    gpu_total_aggregate_pairs_capacity: 4194304
+    gpu_max_soft_body_contacts: 1048576
+    gpu_max_particle_contacts: 1048576
+    gpu_heap_capacity: 67108864
+    gpu_temp_buffer_capacity: 16777216
+    gpu_max_num_partitions: 8
+  name: LargeMapNoGRU
+  drone_model:
+    name: CrazyflieBrushlessPaperDampedV1
+    controller: null
+  time_encoding: false
+  ravel_obs: false
+  randomization: {}
+  reward_effort_weight: 0.0
+  reward_action_smoothness_weight: 0.0
+  reward_motion_smoothness_weight: 0.0
+  reward_distance_scale: 1.0
+  action_transform: navacc_c3bf_experiment_v2
+  action:
+    acceleration_scale_m_s2:
+    - 1.5
+    - 1.5
+    - 0.5
+    heading_mode: HEADING_HOLD
+    mapping_version: navacc_nominal_ball_v2
+    nominal_max_norm_m_s2: 1.6
+    semantics: primary_acceleration_unbounded_raw_top1_rpyt_satallowed_v1
+    total_acceleration_max_m_s2: 1.6
+    actor_frame: goal_fixed_v1
+  ppo:
+    probability_action_key: z_policy
+    trajectory_boundary: true
+  observation:
+    schema: public21_goal_fixed_si_yaw144_dyn10_v1
+    active_width: 16
+    obstacle_slots: 8
+    obstacle_slot_width: 8
+    goal_position_scale: 1.0
+    velocity_scale: 1.0
+    gyro_scale: 10.0
+    obstacle_position_scale: 3.0
+    obstacle_velocity_scale: 3.0
+    obstacle_radius_scale: 1.0
+    obstacle_age_scale: 1.0
+    static_lidar:
+      shape:
+      - 36
+      - 4
+      azimuth_deg:
+      - 0
+      - 10
+      - 20
+      - 30
+      - 40
+      - 50
+      - 60
+      - 70
+      - 80
+      - 90
+      - 100
+      - 110
+      - 120
+      - 130
+      - 140
+      - 150
+      - 160
+      - 170
+      - 180
+      - 190
+      - 200
+      - 210
+      - 220
+      - 230
+      - 240
+      - 250
+      - 260
+      - 270
+      - 280
+      - 290
+      - 300
+      - 310
+      - 320
+      - 330
+      - 340
+      - 350
+      elevation_deg:
+      - -10
+      - 0
+      - 10
+      - 20
+      range_m: 4.0
+      frame: world_aligned
+    dynamic_obstacle:
+      shape:
+      - 4
+      - 8
+      slots:
+      - 2
+      - 3
+      - 6
+      - 7
+      velocity_source: truth_current
+    guidance_mode: global_goal_v1
+    route_lookahead_m: 3.0
+    actor_dynamic_nearest: 2
+    actor_dynamic_cv_threat: 2
+    actor_dynamic_radius_m: 4.0
+    actor_dynamic_min_relative_speed_m_s: 1.0e-06
+    static_lidar_rays: 144
+    mode: public21_goal_fixed_si_yaw144_dyn10_v1
+    state_dim: 21
+    goal_xy_min_norm_m: 1.0
+    goal_z_scale_m: 1.0
+    goal_distance_log_scale_m: 1.0
+    goal_xy_encoding: delta_xy/divide_clamped_xy_norm
+    goal_distance_encoding: log1p_true_3d_distance
+    previous_request_scales_m_s2:
+    - 0.8
+    - 0.8
+    - 0.5
+    static_frame: actual_yaw_only
+    static_encoding: 4-clamp(distance,0,4)
+    missing_previous_request: zero_placeholder_valid_false_telemetry_only
+    dynamic_slot_dim: 10
+    dynamic_schema: uG3_dxy_dz_vrelG3_radius_height_SI_v1
+    gyro_body_scale: 1.0
+    quaternion_schema: wxyz_left_inverse_unit_lex_positive_v1
+  target:
+  - 0.0
+  - 0.0
+  - 2.0
+  reset:
+    start:
+    - -2.5
+    - 0.0
+    - 1.0
+    initial_velocity_world_m_s:
+    - 0.06
+    - 0.0
+    - 0.0
+    train_position_half_range_m: 0.05
+    eval_position_half_range_m: 0.05
+    roll_pitch_half_range_deg: 0.0
+    yaw_uniform_rad:
+    - -3.141592653589793
+    - 3.141592653589793
+    mission_xy_half_extent_m: 24.0
+    mission_start_z_m: 2.0
+    mission_goal_z_m: 2.0
+    mission_clearance_m: 0.3
+    mission_min_separation_m: 0.5
+    mission_max_separation_m: 70.0
+    easy_mission_probability: 0.0
+    mission_sampling_schema: navrl_edges_short_full00_xy_v1
+  arrival:
+    goal_radius_m: 0.2
+    consecutive_outer_steps: 50
+  cbf:
+    form: original_acceleration_collision_cone
+    solver_mode: analytic_candidates_v1
+    obstacle_acceleration_estimate: truth_model
+    diagnostic_config: cfg/navacc_c3bf_diagnostic.yaml
+    method: top1_violation_closed_form
+    solver_output_bound: none
+    d_safe_m: 0.0
+    gamma_per_s: 1.0
+    epsilon_obs_m_s2: 0.0
+    epsilon_track_m_s2: 0.0
+    min_speed_m_s: 0.0001
+    min_rho2_m2: 0.0001
+    min_q_m: 0.01
+    stale_age_s: 0.25
+    row_tolerance: 1.0e-06
+    beta: 2.0
+  soft_all:
+    version: C3BF-soft-all-v1
+    enabled: true
+    lambda_m_inv2: 1.0
+    strict_domain_threshold_m_s: 0.0001
+    solver_mode: exhaustive_hinge_regions_with_bounded_disk_kkt_bisection
+    config_path: cfg/navacc_c3bf_soft_all_v1.yaml
+  cbf_failure:
+    mode: unverified_nominal_low_speed_else_held_terminal_v1
+    candidate_source: explicit_current_nominal
+    terminate_on_failure: true
+    terminate_other_failures: true
+    execution_protocol: nominal_continue
+  obstacle:
+    stage: ENV1005_SMOOTH_TRAJECTORY_CURRICULUM
+    static_count: 4
+    dynamic_count: 4
+    capacity: 8
+    radius_m: 0.3
+    uav_radius_xy_m: 0.1
+    full_height_m: 6.0
+    static_template_xy:
+    - - -1.0
+      - 0.9
+    - - 1.0
+      - -0.9
+    dynamic_template_center_xy:
+    - 0.0
+    - 0.0
+    dynamic_sweep_half_length_m: 0.35
+    layout_clearance_m: 0.3
+    endpoint_edge_clearance_m: 0.5
+    layout_candidates_per_env_per_batch: 32
+    max_layout_sampling_batches: 256
+    v_max_m_s: 0.5
+    a_max_m_s2: 1.0
+    measurement_rate_hz: 100.0
+    measurement_noise_std_m: 0.0
+    measurement_delay_s: 0.0
+    measurement_dropout_probability: 0.0
+    measurement_anchor_on_reset: true
+    tracker_alpha: 0.85
+    tracker_beta: 0.1
+    tracker_stale_timeout_s: 0.25
+    initial_cbf_admission:
+      enabled: false
+      solver_mode: analytic_candidates_v1
+    dynamic_template_centers_xy:
+    - - -0.65
+      - -0.65
+    - - 0.65
+      - 0.65
+    fixed_bank_version: navacc_env1005_smooth_trajectory_v1
+    b_motion:
+      acceleration_min_m_s2: 0.01
+      acceleration_max_m_s2: 0.04
+      velocity_max_m_s: 0.45
+      turn_fraction_min: 0.25
+      turn_fraction_max: 0.7
+    trajectory:
+      schema_version: navacc_env1005_trajectory_plan_v1
+      pending_freeze: true
+      horizon_s: 15.0
+      arena_center_limit_m: 2.7
+      pair_distance_m: 0.9
+      endpoint_distance_m: 0.8
+      speed_min_m_s: 0.08
+      speed_max_m_s: 0.5
+      mean_speed_min_m_s: 0.12
+      mean_speed_max_m_s: 0.3
+      total_acceleration_max_m_s2: 0.5
+      acceleration_levels_m_s2:
+      - 0.0
+      - 0.1
+      - 0.2
+      - 0.3
+      - 0.4
+      - 0.5
+      acceleration_probabilities:
+      - 0.16666666666666666
+      - 0.16666666666666666
+      - 0.16666666666666666
+      - 0.16666666666666666
+      - 0.16666666666666666
+      - 0.16666666666666666
+      family_probabilities:
+      - 0.4
+      - 0.4
+      - 0.2
+      radius_min_m: 0.35
+      radius_max_m: 0.8
+      ellipse_axis_ratio_max: 1.6
+      speed_cycles:
+      - 1
+      - 2
+      - 3
+      candidates_per_batch: 64
+      max_scene_candidates: 1024
+      geometry_margin_m: 1.0e-05
+      grid_dt_s: 0.01
+      numeric_tolerance: 1.0e-05
+  shadow:
+    enabled: true
+    d_safe_m: 0.1
+    relative_speed_low_m_s: 0.05
+    rho2_low_m2: 0.0001
+    q_norm_low_m: 0.01
+    stale_age_s: 0.25
+  reward:
+    terminal_penalty: -20.0
+    fly_speed_scale_m_s: 1.8
+    goal_zone_radius_m: 0.5
+    arrival_hold_steps: 50
+    smoothness_coefficient: 0.05
+    arrival_bonus_base: 40.0
+    arrival_bonus_time: 40.0
+    collision_penalty: -60.0
+    crash_penalty: -60.0
+    oob_penalty: -60.0
+    timeout_penalty: -60.0
+    boundary_risk:
+      enabled: false
+    version: navacc_v4_actionbrake_map1_v1
+    height_risk:
+      weight: 0.0
+      mode: navrl_start_goal_interval_v1
+      navrl_coef: 8.0
+      navrl_tolerance_m: 0.2
+    progress:
+      weight: 1.5
+      speed_scale_m_s: 1.8
+      distance_mode: goal_ball
+    brake:
+      a_ref_m_s2: 0.7310784151477199
+      tau_s: 0.01
+      weight: 2.0
+      speed_scale_m_s: 1.8
+      max_allow_speed_m_s: 1.8
+      speed_mode: near_goal_total_speed
+      near_goal_radius_m: 0.5
+      near_goal_blend_width_m: 0.3
+      mode: huber_positive_excess
+    boundary:
+      weight: 0.0
+      buffer_m: 0.2
+      risk_scale_m: 0.5
+    dwell:
+      bonus: 0.2
+    capture:
+      coefficient: 6.0
+    cbf_dual:
+      common_version: common_all_rows_worst_margin_exec_v3
+      sigma_a_m_s2: 1.0
+      weight_violation: 0.1
+      weight_correction: 0.03
+      failure_penalty: 0.0
+    smoothness_normalization_m_s2: 1.0
+    static:
+      weight_per_step: 1.0
+      floor_m: 0.05
+      range_m: 2.0
+    height_mode: navrl_start_goal_interval_v1
+    height_interval_tolerance_m: 0.2
+    height_interval_rate_per_s: 8.0
+    potential_scale: 10.0
+    discount_time_constant_s: 60.0
+    gae_time_constant_s: 1.0
+    arrival_bonus_once: 80.0
+    failure_discounted_cost: 80.0
+    pb_mode: none
+    oob_shaping_rate: 0.0
+    oob_xy_limit_m: 24.0
+    near_goal_pbrs_rate: 0.0
+    near_goal_pbrs_max_d_m: 2.5
+    near_goal_pbrs_inner_m: 0.5
+    mode: obstacle_course_continuous_v1
+    goal_radius_m: 0.5
+    goal_brake_rate: 0.0
+    cbf_schema: raw_margin_and_valid_original_candidate_correction_v1
+    velocity_rate: 5.0
+    lidar_risk_rate: 0.0
+    time_rate: 0.05
+    effort_rate: 0.0
+    failure_discount_compensation: false
+    hold_rate: 1.0
+    hold_speed_reference_m_s: 0.5
+    cbf_correction_coeff: 3.0
+    deadline_s: 32.0
+    execution_smooth_rate: 0.02
+  termination:
+    crash_height_m: 0.15
+    arena_xy_m: 25.0
+    ceiling_height_m: 4.5
+  evaluation:
+    seed: 3725
+    episodes: 0
+    batch_size: 0
+    steps: 1500
+    deterministic: true
+    corpus_revision: c1_long_arena_cbf_admitted_v1
+    corpus_sha256: 8876c78f7a4e5bd4e7cffdc591df69bfcc05a85986bf1459ca999d5909672c64
+    thresholds:
+      arrival_fraction_at_least: 0.9
+      collision_fraction_at_most: 0.05
+      cbf_failure_fraction_observed_only: true
+    num_envs_default: 4
+    max_steps: 12000
+  scope:
+    label: NavACC_Zero_GlobalGoal_VelocityReward_Curriculum_v1
+    checkpoint_compatible_with: NavAccC3BFV4ActionBrake-structured192-from-common-zero-v1
+    corpus_revision: c1_long_arena_cbf_admitted_v1
+    corpus_sha256: 8876c78f7a4e5bd4e7cffdc591df69bfcc05a85986bf1459ca999d5909672c64
+    solver_mode: analytic_candidates_v1
+    arrival_radius_m: 0.2
+    excluded:
+    - old_outer_ring_controller
+    - tiny_policy_residual_semantics
+    - vertical_dynamic_obstacle_motion
+    - continuous_acceleration_certificate
+    - realtime_claim_at_1024_envs
+    bound_status: NOMINAL_SIMULATION_DIAGNOSTIC_UNVALIDATED
+    parent_checkpoint_role: none_random_initialization_or_explicit_learning_transfer
+  curriculum:
+    schedule: fixed_frames_8m_16m_v1
+    initial_stage: 0
+    frame_thresholds:
+    - 0
+    - 8000000
+    - 16000000
+    stages:
+    - active_count: 1
+      static_count: 0
+      dynamic_count: 1
+      static_slots: []
+      dynamic_slots:
+      - 2
+      layout_half_range_m: 1.8
+      min_pair_clearance_m: 0.3
+      sweep_half_length_m: 0.25
+      v_max_m_s: 0.5
+      a_max_m_s2: 0.5
+    - active_count: 2
+      static_count: 1
+      dynamic_count: 1
+      static_slots:
+      - 0
+      dynamic_slots:
+      - 2
+      layout_half_range_m: 1.9
+      min_pair_clearance_m: 0.3
+      sweep_half_length_m: 0.4
+      v_max_m_s: 0.5
+      a_max_m_s2: 0.5
+    - active_count: 4
+      static_count: 2
+      dynamic_count: 2
+      static_slots:
+      - 0
+      - 1
+      dynamic_slots:
+      - 2
+      - 3
+      layout_half_range_m: 2.0
+      min_pair_clearance_m: 0.3
+      sweep_half_length_m: 0.6
+      v_max_m_s: 0.5
+      a_max_m_s2: 0.5
+  v4:
+    profile: ActionMap1_GoalBrake_MB
+    geometry: predict_geometry_static_rays_l4_v1
+    wall_event: strict_center_xy_substep_latch_v1
+    cbf_domain: active_dynamic_only_v1
+    control: target_tilt_off_post_actual_tilt40_v1
+    crash_tilt_deg: 40.0
+    predict:
+      horizon_s: 1.5
+      warn_m: 0.3
+      v_ref_m_s: 1.0
+      weight: 2.0
+      column_net_gap_m: 0.4
+    goal_gate:
+      center_m: 0.2
+      width_m: 0.3
+  mixed_curriculum:
+    enabled: true
+    mode: fixed_frames
+    initial_phase: S0
+    curriculum_seed: 101008
+    preserve_existing_assignments: true
+    apply_on_episode_reset: true
+    phase_profiles:
+      S0:
+        N1: 1.0
+        N2: 0.0
+        N3: 0.0
+      S1:
+        N1: 0.8
+        N2: 0.2
+        N3: 0.0
+      S2:
+        N1: 0.2
+        N2: 0.6
+        N3: 0.2
+      S3:
+        N1: 0.1
+        N2: 0.2
+        N3: 0.7
+    fixed_frames:
+      phase_start_frames:
+      - 0
+      - 8000000
+      - 16000000
+      - 32000000
+    performance:
+      enabled: false
+      min_completed_episodes: 256
+      consecutive_passes: 2
+      consecutive_failures: 2
+      cooldown_updates: 100
+      upgrade:
+        arrival_rate: 0.7
+        collision_rate: 0.15
+        crash_oob_rate: 0.1
+      downgrade:
+        arrival_rate: 0.4
+        collision_rate: 0.3
+        crash_oob_rate: 0.2
+  viewer:
+    eye:
+    - 45.0
+    - 45.0
+    - 40.0
+    lookat:
+    - 0.0
+    - 0.0
+    - 0.0
+  large_map:
+    scene_path: resources/s280d50/train/scene.json
+    format_version: navacc-navrl-shared50-planar-v1
+    static_count: 280
+    dynamic_count: 50
+    dynamic_classes: 8
+    dynamic_fixed_z: true
+    dynamic_velocity_z_m_s: 0.0
+    dynamic_period_s: 2.0
+    global_clock_reset_with_episode: false
+    mission_deadline_s: 32.0
+    static_safety_mode: static_c3bf
+    static_safety_modes_supported:
+    - lidar144
+    - static_c3bf
+    c3bf_xy_center_eligibility_m: 3.0
+    c3bf_global_selected_row_max: 1
+    c3bf_safety_margin_m: 0.05
+    c3bf_gamma_per_s: 1.0
+    c3bf_hocbf_lambda_per_s: 1.2
+    c3bf_minimum_relative_speed_m_s: 0.0001
+    c3bf_row_tolerance_m2_s2: 0.0001
+    normal_h_recovery_mode: project_feasible
+    motor_lag_tau_s: 0.05
+    policy_role: trainable_primary_ppo_acceleration
+    continuous_acceleration_certificate_supported: false
+    execution_protocol: nominal_continue_unbounded_raw_top1_v1
+    mass_schema: singlebody_total_mass_v1
+    total_mass_kg: 0.042
+    c3bf_numeric_schema: top1_selected_float64_cast_verify_float32_tol1e4_v1
+    c3bf_selected_projection_dtype: float64
+    c3bf_output_verification_dtype: float32
+    c3bf_raw_post_diagnostic_tolerance_m2_s2: 1.0e-06
+    c3bf_radius_schema: obstacle_equivalent_radius_plus_uav_radius_no_extra_margin_v1
+    c3bf_uav_safety_radius_m: 0.1
+    c3bf_extra_safety_margin_m: 0.0
+    converter_tilt_validity_check: false
+    obstacle_geometry_mode: all_cylinders_width_diameter_v1
+    obstacle_geometry_schema: all_cylinders_width_as_diameter_zaxis_v1
+    obstacle_width_semantics: diameter
+    obstacle_cylinder_axis: Z
+    episode_mode: obstacle_course_continuous_v1
+    cohort_target_size: 1024
+    hold48_evaluation_protocol: fixed_obstacle_course_hold_end_v1
+    evaluation_protocol: null
+    dynamic_clock_origin_s: 0.0
+    goal_frame_profile: public21_goal_fixed_si_yaw144_dyn10_v1
+    goal_curriculum_schema: largemap_no_gru_v1
+    curriculum_stage: 0
+    course_context:
+      phase_id: portable
+      density: S280D50
+      horizon_s: 32
+      historical_through_ordinal: -1
+algo:
+  name: navacc_v4_ppo
+  train_every: 128
+  ppo_epochs: 4
+  num_minibatches: 64
+  entropy_coef: 0.001
+  priv_actor: false
+  priv_critic: false
+  critic_input_mode: legacy
+  checkpoint_path: null
+  probability_action_key: z_policy
+  trajectory_boundary: true
+  std_mode: state_smooth_v1
+  structured_state_dim: 21
+  structured_observation_mode: public21_goal_fixed_si_yaw144_dyn10_v1
+  lr: 0.0001
+  hold36_continuation_lr: 0.0001
+  dynamic_slot_dim: 10
+  goal_curriculum_schema: largemap_no_gru_v1
+headless: true
+sim:
+  dt: 0.002
+  substeps: 5
+  gravity:
+  - 0
+  - 0
+  - -9.81
+  replicate_physics: false
+  use_flatcache: true
+  use_gpu_pipeline: true
+  device: cuda:0
+  solver_type: 1
+  use_gpu: true
+  bounce_threshold_velocity: 0.2
+  friction_offset_threshold: 0.04
+  friction_correlation_distance: 0.025
+  enable_stabilization: true
+  gpu_max_rigid_contact_count: 2097152
+  gpu_max_rigid_patch_count: 2097152
+  gpu_found_lost_pairs_capacity: 4194304
+  gpu_found_lost_aggregate_pairs_capacity: 33554432
+  gpu_total_aggregate_pairs_capacity: 4194304
+  gpu_max_soft_body_contacts: 1048576
+  gpu_max_particle_contacts: 1048576
+  gpu_heap_capacity: 67108864
+  gpu_temp_buffer_capacity: 16777216
+  gpu_max_num_partitions: 8
+env:
+  num_envs: 1024
+  env_spacing: 0
+  max_episode_length: 3200
+viewer:
+  resolution:
+  - 960
+  - 720
+  eye:
+  - 45.0
+  - 45.0
+  - 40.0
+  lookat:
+  - 0.0
+  - 0.0
+  - 0.0
+seed: 3725
+portable:
+  schema: largemap_no_gru_v1
+  purpose: train
+  actor_lr: 5.0e-06
+  critic_lr: 5.0e-05
+  physical_backend: brushless_paper_reference_damping02_v1
+  training_resume: learning_state_only_fresh_physics_clock_rng_cohort
+  historical_campaign_KL_gate: not_inherited_explicitly; PPO objective unchanged

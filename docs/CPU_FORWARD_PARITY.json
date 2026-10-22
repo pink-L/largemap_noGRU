@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "teacher": "Exact unmodified original snapshot PlanarPrimaryPPOPolicy loaded by file location; original build_cpu_policy AST source; real identical structured/PPO/GAE/VN imports, no stub sys.modules",
+  "teacher_source_head": "24c2ce80d26c0b0eb72a14756c3e34f61c94a1f5",
+  "observation_count": 64,
+  "maximum_absolute_difference": {
+    "loc": 0.0,
+    "scale": 0.0,
+    "state_value": 0.0,
+    "raw_value": 0.0
+  },
+  "policy_tensors": 63,
+  "policy_digest": "76c4f0a0520cacf99e259c7386f0b58b5950eaafdbece187dc47c022c2b98c3e",
+  "named_Adam_moments_equal": true,
+  "no_isaac_imported": true,
+  "unchanged_math_modules": [
+    "omni_drones/learning/ppo/ppo.py",
+    "omni_drones/learning/ppo/common.py",
+    "omni_drones/learning/ppo/navacc_v4_structured.py",
+    "omni_drones/learning/ppo/navacc_smooth_std.py",
+    "scripts/navacc_goal_frame.py",
+    "scripts/navacc_large_map_planar_reward.py",
+    "scripts/navacc_large_map_planar_unbounded.py",
+    "scripts/navacc_large_map_planar_c3bf.py",
+    "scripts/navacc_large_map_planar_backend.py",
+    "omni_drones/controllers/acceleration_to_rpyt.py",
+    "omni_drones/controllers/brushless_paper_adapter.py"
+  ],
+  "limitations": "CPU fixed off-policy observations only; not navigation/performance equivalence. Both constructors receive identical current numeric reward/config."
+}

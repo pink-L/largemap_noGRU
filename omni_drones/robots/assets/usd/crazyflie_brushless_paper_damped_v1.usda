@@ -1,0 +1,82 @@
+#usda 1.0
+(
+    defaultPrim = "BrushlessPaperDampedV1"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+def Xform "BrushlessPaperDampedV1" (
+    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+)
+{
+    bool physics:rigidBodyEnabled = true
+    float physics:mass = 0.042
+    point3f physics:centerOfMass = (0,0,0)
+    float3 physics:diagonalInertia = (0.000033,0.000036,0.000059)
+    quatf physics:principalAxes = (1,0,0,0)
+    float physxRigidBody:linearDamping = 0.2
+    float physxRigidBody:angularDamping = 0.2
+    bool physxRigidBody:enableGyroscopicForces = true
+    def Cube "body" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+    {
+        double size = 1
+        double3 xformOp:scale = (0.04,0.04,0.02)
+        uniform token[] xformOpOrder = ["xformOp:scale"]
+        color3f[] primvars:displayColor = [(0.15,0.25,0.5)]
+    }
+    def Xform "motor_0"
+    {
+        double3 xformOp:translate = (0.03535,0.03535,0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+        custom double3 brushless:forceSiteBodyM = (0.03535,0.03535,0)
+        custom int brushless:spinBodyPositiveZ = -1
+        def Cylinder "visual_only"
+        {
+            double radius = 0.025
+            double height = 0.002
+            uniform token axis = "Z"
+            color3f[] primvars:displayColor = [(0.2,0.7,0.3)]
+        }
+    }
+    def Xform "motor_1"
+    {
+        double3 xformOp:translate = (-0.03535,0.03535,0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+        custom double3 brushless:forceSiteBodyM = (-0.03535,0.03535,0)
+        custom int brushless:spinBodyPositiveZ = 1
+        def Cylinder "visual_only"
+        {
+            double radius = 0.025
+            double height = 0.002
+            uniform token axis = "Z"
+            color3f[] primvars:displayColor = [(0.2,0.7,0.3)]
+        }
+    }
+    def Xform "motor_2"
+    {
+        double3 xformOp:translate = (-0.03535,-0.03535,0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+        custom double3 brushless:forceSiteBodyM = (-0.03535,-0.03535,0)
+        custom int brushless:spinBodyPositiveZ = -1
+        def Cylinder "visual_only"
+        {
+            double radius = 0.025
+            double height = 0.002
+            uniform token axis = "Z"
+            color3f[] primvars:displayColor = [(0.2,0.7,0.3)]
+        }
+    }
+    def Xform "motor_3"
+    {
+        double3 xformOp:translate = (0.03535,-0.03535,0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+        custom double3 brushless:forceSiteBodyM = (0.03535,-0.03535,0)
+        custom int brushless:spinBodyPositiveZ = 1
+        def Cylinder "visual_only"
+        {
+            double radius = 0.025
+            double height = 0.002
+            uniform token axis = "Z"
+            color3f[] primvars:displayColor = [(0.2,0.7,0.3)]
+        }
+    }
+}

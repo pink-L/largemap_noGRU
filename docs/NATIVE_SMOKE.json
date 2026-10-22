@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "smoke_version": "smoke_v3",
+  "budget": "32env*128collector + onePPO +32sampled ticks=160controlsteps/env",
+  "native_complete": {
+    "status": "COMPLETE",
+    "command": "smoke",
+    "purpose": "smoke",
+    "ledger": {
+      "local_updates": 1,
+      "local_frames": 4096,
+      "source_displayed_frames": 265906176
+    },
+    "final_static_audit": {
+      "schema": "damped_static_audit_cache_v1",
+      "full_scans": 2,
+      "construction_scans": 1,
+      "forced_end_scans": 1,
+      "cache_hits": 4,
+      "failed_scans": 0,
+      "last_full_scan_status": "PASS",
+      "bound_plant_count": 32,
+      "binding_identity": {
+        "drone": 127353164057872,
+        "view": 127350001803792,
+        "stage": 127349045865360,
+        "prim_paths": [
+          "/World/envs/env_0/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_1/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_2/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_3/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_4/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_5/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_6/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_7/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_8/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_9/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_10/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_11/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_12/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_13/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_14/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_15/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_16/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_17/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_18/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_19/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_20/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_21/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_22/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_23/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_24/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_25/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_26/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_27/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_28/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_29/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_30/CrazyflieBrushlessPaperDampedV1_0",
+          "/World/envs/env_31/CrazyflieBrushlessPaperDampedV1_0"
+        ]
+      }
+    },
+    "source_bytes_unchanged": true,
+    "wandb": {
+      "requested": false,
+      "finished": false,
+      "error": null
+    }
+  },
+  "checks": {
+    "status": "PASS",
+    "diagnostic_only": true,
+    "formal_navigation_metric": false,
+    "partial_reset_ids": [
+      0
+    ],
+    "other_lanes_unchanged": true,
+    "global_clock_unchanged_on_partial_reset": true,
+    "sampled_eval_steps": 32,
+    "model_VN_unchanged": true,
+    "total_control_steps_per_lane": 160
+  },
+  "post_smoke_source_delta": {
+    "largemap_no_gru/evaluation.py": {
+      "smoke_sha256": "ae35c6cb524480c28da74db0dce46671d9063f29032a4d63ec18ac9191064401",
+      "final_sha256": "e9ac4e8b43b6d1c48a07674f71cc3b6d095c8d41bef203a7568f03e42af72f8b"
+    },
+    "largemap_no_gru/__main__.py": {
+      "smoke_sha256": "3a7e58ec9362d23728017f923682a8314005859a86f3bfc876ab7521e2a780b8",
+      "final_sha256": "5f7a3c666e6b41b3a8ca7390aa9b1887d43d424fa87729c58d0b3502b72a0aa5"
+    },
+    "largemap_no_gru/native.py": {
+      "smoke_sha256": "56148d876d3a765d7585540df14421070ca4600e81258bac3f329cf53dc81e15",
+      "final_sha256": "68ba2109d8acec72893ffb04fb4fe3a3e4eb6453b09bc27361a1c577d008d86e"
+    },
+    "resources/numeric_regression.json": {
+      "smoke_sha256": null,
+      "final_sha256": "9cc0299fb0b32dbbaa9b6d7166f41cf814129df33175d076a2b6107a84ee61f3"
+    }
+  },
+  "post_smoke_delta_scope": "Eval-only completed-early prefix oracle/actual tick metadata, eval fixed seed CLI validation, added CPU golden resource. No smoke physics/PPO/controller changes; prefix boundary covered by CPU mock, no additional GPU."
+}

@@ -1,0 +1,26 @@
+{
+  "resources/s280d50/train/scene.json": {
+    "source": "/home/lz/lzspace/experiment_artifacts/navacc_overnight_three_stage60M_from140M_20261020/scene_suites/S280D50/training/time32/scene.json",
+    "sha256": "ca4b68c43ada16f3db2acd4a537f14c846db7d04b961d18286a83f1aa1a56f7e"
+  },
+  "resources/s280d50/train/contract.json": {
+    "source": "/home/lz/lzspace/experiment_artifacts/navacc_overnight_three_stage60M_from140M_20261020/scene_suites/S280D50/training/time32/contract.json",
+    "sha256": "7c8408cd8d65708645329e63782d30e6c76c4f387e1d1647d584ce487be16855"
+  },
+  "resources/s280d50/train/requests.json": {
+    "source": "/home/lz/lzspace/experiment_artifacts/navacc_overnight_three_stage60M_from140M_20261020/scene_suites/S280D50/training/requests.json",
+    "sha256": "6e419675d395490de7a3c68e41f8f96ce1e774bb552e4f9b12a0b6f102f2ae05"
+  },
+  "resources/s280d50/eval/scene.json": {
+    "source": "/home/lz/lzspace/experiment_artifacts/navacc_overnight_three_stage60M_from140M_20261020/scene_suites/S280D50/evaluation/time32/scene.json",
+    "sha256": "8ddf9e4c5f824fb3960c60db2840f9eff2140d06f340021ad03785d1d815641b"
+  },
+  "resources/s280d50/eval/contract.json": {
+    "source": "/home/lz/lzspace/experiment_artifacts/navacc_overnight_three_stage60M_from140M_20261020/scene_suites/S280D50/evaluation/time32/contract.json",
+    "sha256": "d46bb75fc0a413a483f3ac856707c5f7eb21619194d3276e1234c1609f1e8248"
+  },
+  "resources/s280d50/eval/requests.json": {
+    "source": "/home/lz/lzspace/experiment_artifacts/navacc_overnight_three_stage60M_from140M_20261020/scene_suites/S280D50/evaluation/requests.json",
+    "sha256": "48cf37dc68359db482bedf6236cf3258448b9de9ec1e579e0a8c7f52b0ad78e3"
+  }
+}

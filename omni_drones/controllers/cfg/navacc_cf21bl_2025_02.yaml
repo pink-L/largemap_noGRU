@@ -1,0 +1,65 @@
+# NavAcc Stage B source/config provenance. This is not deployment calibration.
+validation_status: UNVALIDATED
+firmware:
+  repository: https://github.com/bitcraze/crazyflie-firmware
+  release: "2025.02"
+  commit: 16c5630707e92830dcd16455a57b5560e5838735
+  platform: cf21bl
+  build_config: configs/cf21bl_defconfig
+  source_files:
+    - src/modules/src/controller/controller_pid.c
+    - src/modules/src/controller/attitude_pid_controller.c
+    - src/utils/src/pid.c
+    - src/utils/src/filter.c
+    - src/modules/src/crtp_commander_rpyt.c
+    - src/modules/src/power_distribution_quadrotor.c
+    - src/modules/src/stabilizer.c
+    - src/platform/interface/platform_defaults_cf21bl.h
+  battery_compensation: not_applied_to_brushless
+  pid_low_pass_filters_enabled: false
+  motors_require_arming: true
+
+clock:
+  inner_dt_s: 0.002
+  inner_rate_hz: 500
+
+attitude_pid:
+  roll:  {kp: 6.0, ki: 3.0, kd: 0.0,  kff: 0.0, integral_limit: 20.0}
+  pitch: {kp: 6.0, ki: 3.0, kd: 0.0,  kff: 0.0, integral_limit: 20.0}
+  yaw:   {kp: 6.0, ki: 1.0, kd: 0.35, kff: 0.0, integral_limit: 360.0}
+rate_pid:
+  roll:  {kp: 200.0, ki: 400.0, kd: 2.5, kff: 0.0, integral_limit: 33.3}
+  pitch: {kp: 200.0, ki: 400.0, kd: 2.5, kff: 0.0, integral_limit: 33.3}
+  yaw:   {kp: 120.0, ki: 16.7,  kd: 0.0, kff: 0.0, integral_limit: 166.7}
+
+legacy_rpyt:
+  commander_thrust_min: 1000
+  commander_thrust_max: 60000
+  idle_thrust: 7000
+  yaw_max_delta_deg: 0.0
+  api_to_firmware_attitude_sign: [1.0, -1.0, 1.0]
+  simulation_to_firmware_attitude_sign: [1.0, -1.0, 1.0]
+  api_yaw_rate_to_firmware_sign: -1.0
+  gyro_body_to_firmware_sign: [1.0, -1.0, 1.0]
+
+motor_adapter:
+  pwm_to_thrust_a_N: 0.091492681
+  pwm_to_thrust_b_N: 0.067673604
+  simulation_max_thrust_per_rotor_N: 0.289
+  # Local prim order: (+x,+y),(-x,+y),(-x,-y),(+x,-y).
+  simulation_motor_from_firmware: [3, 2, 1, 0]
+  apply_motor_dynamics_in_controller: false
+  downstream_motor_time_constant_s: 0.05
+
+simulation_vehicle:
+  source: omni_drones/robots/assets/usd/crazyflie.yaml
+  mass_kg: 0.042
+  gravity_m_s2: 9.81
+  max_tilt_deg: 35.0
+
+unvalidated:
+  - deployed firmware and runtime parameter parity
+  - cflib revision and complete radio-to-estimator sign chain
+  - target vehicle thrust curve and battery/voltage behavior
+  - simulator force and moment response parity
+  - world-yaw to firmware-yaw calibration

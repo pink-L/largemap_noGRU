@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checked_source_entries": 939,
+  "symlink_hash_semantics": "literal link target bytes",
+  "changed": [],
+  "head": "24c2ce80d26c0b0eb72a14756c3e34f61c94a1f5",
+  "status_porcelain": ""
+}

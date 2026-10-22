@@ -1,0 +1,613 @@
+{
+  "source_head": "24c2ce80d26c0b0eb72a14756c3e34f61c94a1f5",
+  "files": {
+    "config/baseline.yaml": {
+      "source_path": null,
+      "current_sha256": "0f1862939d9bfe360e0f87d42e8324b4b505f1f6ca63cff90897f3824a27db0f",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/__init__.py": {
+      "source_path": null,
+      "current_sha256": "7475c9073b93babb0f35ba25261f781071e17c47600f8ad36956b8631879eded",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/__main__.py": {
+      "source_path": null,
+      "current_sha256": "5f7a3c666e6b41b3a8ca7390aa9b1887d43d424fa87729c58d0b3502b72a0aa5",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/checkpoint.py": {
+      "source_path": null,
+      "current_sha256": "d2d551c3dc7859788d1e07a712731819eec62acebe245b1989bb8a713036f1ed",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/config.py": {
+      "source_path": null,
+      "current_sha256": "527598d1bf00781077a87a4faab779f192dfa2bb52ff122d1125c2e940a4e4d0",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/diagnostics.py": {
+      "source_path": null,
+      "current_sha256": "8a1671abddf35773a4e03d7d4d56e1f3b05eee0b3b1b429c2d8f09872124c69f",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/environment.py": {
+      "source_path": null,
+      "current_sha256": "2c53d397976f9c09be4e926ed7c75fc83d23ed12dfa596de13348eb58a3204bd",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/evaluation.py": {
+      "source_path": null,
+      "current_sha256": "e9ac4e8b43b6d1c48a07674f71cc3b6d095c8d41bef203a7568f03e42af72f8b",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/model.py": {
+      "source_path": null,
+      "current_sha256": "052f87f7826d7e6fa1feaa3096402c4ec3a7800a685c76ee0bfa03583abd7871",
+      "kind": "new portable integration/resource"
+    },
+    "largemap_no_gru/native.py": {
+      "source_path": null,
+      "current_sha256": "68ba2109d8acec72893ffb04fb4fe3a3e4eb6453b09bc27361a1c577d008d86e",
+      "kind": "new portable integration/resource"
+    },
+    "omni_drones/__init__.py": {
+      "source_path": "omni_drones/__init__.py",
+      "source_sha256": "5fd8c3a656d664d0322629227e202b5c0f8cbb18f9e4a218098c8e2160d1adac",
+      "current_sha256": "f679d85eb2bf18b503f0a047975b1b3098cf9b5b8a3395bfc0e431fdb34032d0",
+      "byte_identical": false
+    },
+    "omni_drones/actuators/__init__.py": {
+      "source_path": "omni_drones/actuators/__init__.py",
+      "source_sha256": "881e6ffda43aa13baa74ecb52c1a32c32c5fa318c90a6175f0a80af19916805f",
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "byte_identical": false
+    },
+    "omni_drones/actuators/brushless_paper.py": {
+      "source_path": "omni_drones/actuators/brushless_paper.py",
+      "source_sha256": "83c6e73b52bf8a84c828f478cfa91a6fa5a8a6265d4365961251fdc91a49e13b",
+      "current_sha256": "83c6e73b52bf8a84c828f478cfa91a6fa5a8a6265d4365961251fdc91a49e13b",
+      "byte_identical": true
+    },
+    "omni_drones/actuators/rotor_group.py": {
+      "source_path": "omni_drones/actuators/rotor_group.py",
+      "source_sha256": "22674e5049df58774fd25b01b68eee4f881d172f739fe9d2cdd540dad9a16994",
+      "current_sha256": "22674e5049df58774fd25b01b68eee4f881d172f739fe9d2cdd540dad9a16994",
+      "byte_identical": true
+    },
+    "omni_drones/controllers/__init__.py": {
+      "source_path": "omni_drones/controllers/__init__.py",
+      "source_sha256": "c6a12474ea752a7d1df08479e75c48054fe37793a8f155e273f2b7e51a2ea899",
+      "current_sha256": "58bd177dabbf57dc56f0baaff50dc2d7b103dc728cb35b74685b622d2c0309da",
+      "byte_identical": false
+    },
+    "omni_drones/controllers/acceleration_to_rpyt.py": {
+      "source_path": "omni_drones/controllers/acceleration_to_rpyt.py",
+      "source_sha256": "438c96eb8cfdeb70f89f7b362fa1324facb2dda8b2b0729d017c040e40e2a2ea",
+      "current_sha256": "438c96eb8cfdeb70f89f7b362fa1324facb2dda8b2b0729d017c040e40e2a2ea",
+      "byte_identical": true
+    },
+    "omni_drones/controllers/brushless_paper_adapter.py": {
+      "source_path": "omni_drones/controllers/brushless_paper_adapter.py",
+      "source_sha256": "05385bb2960ca25fb2d06b34d095c0664bb07f86d1570d210ce9cd0c67bdae70",
+      "current_sha256": "05385bb2960ca25fb2d06b34d095c0664bb07f86d1570d210ce9cd0c67bdae70",
+      "byte_identical": true
+    },
+    "omni_drones/controllers/cf2x_pid.py": {
+      "source_path": "omni_drones/controllers/cf2x_pid.py",
+      "source_sha256": "998da1965096a697af1f817dc7de3a777e9f97b296d317e5cd41b08692357d6b",
+      "current_sha256": "998da1965096a697af1f817dc7de3a777e9f97b296d317e5cd41b08692357d6b",
+      "byte_identical": true
+    },
+    "omni_drones/controllers/cfg/navacc_cf21bl_2025_02.yaml": {
+      "source_path": "omni_drones/controllers/cfg/navacc_cf21bl_2025_02.yaml",
+      "source_sha256": "4b8d462aa83aa0e43c93d1cd4baf7b0e12741d9ea020d78419f898c2f7485a9f",
+      "current_sha256": "4b8d462aa83aa0e43c93d1cd4baf7b0e12741d9ea020d78419f898c2f7485a9f",
+      "byte_identical": true
+    },
+    "omni_drones/controllers/controller.py": {
+      "source_path": "omni_drones/controllers/controller.py",
+      "source_sha256": "0c6e019e23e689dbec2a69237d5b5540f5dbf24a8748d34d2e2743fa69113186",
+      "current_sha256": "0c6e019e23e689dbec2a69237d5b5540f5dbf24a8748d34d2e2743fa69113186",
+      "byte_identical": true
+    },
+    "omni_drones/controllers/crazyflie_firmware_pid.py": {
+      "source_path": "omni_drones/controllers/crazyflie_firmware_pid.py",
+      "source_sha256": "30a8b133ed90d141c31f762eb7f5087302c1e94b2ebd3913ebf18d43169ecb83",
+      "current_sha256": "30a8b133ed90d141c31f762eb7f5087302c1e94b2ebd3913ebf18d43169ecb83",
+      "byte_identical": true
+    },
+    "omni_drones/controllers/navacc_sim_pilot.py": {
+      "source_path": "omni_drones/controllers/navacc_sim_pilot.py",
+      "source_sha256": "ad7359171419e1fe1f9dcac8edf4cac9b93f4ff91c32d505575f2cbe88f754c3",
+      "current_sha256": "ad7359171419e1fe1f9dcac8edf4cac9b93f4ff91c32d505575f2cbe88f754c3",
+      "byte_identical": true
+    },
+    "omni_drones/envs/__init__.py": {
+      "source_path": "omni_drones/envs/__init__.py",
+      "source_sha256": "87d48d0f60b170a6ce59335eefc6366a4c5ba378550a6941f1b41db230f18ca8",
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "byte_identical": false
+    },
+    "omni_drones/envs/isaac_env.py": {
+      "source_path": "omni_drones/envs/isaac_env.py",
+      "source_sha256": "cb078a2ee65ff23ce70c3420a6083f41f63fe72a6949cf53a7af34d96ba71f61",
+      "current_sha256": "9e346a36712c8cfe291700b8db31349124300a3d30cc8e8b721116e17dd35b64",
+      "byte_identical": false
+    },
+    "omni_drones/envs/single/__init__.py": {
+      "source_path": "omni_drones/envs/single/__init__.py",
+      "source_sha256": "d992fa0a1315114b40830569a3764e2523821ef2ca49b3f3f1a309a9f486bff4",
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "byte_identical": false
+    },
+    "omni_drones/envs/single/hover.py": {
+      "source_path": "omni_drones/envs/single/hover.py",
+      "source_sha256": "96bbc2d6d3698e093c59736dc701e3f89fdef71e1e1510b101cafaf28546bdfe",
+      "current_sha256": "96bbc2d6d3698e093c59736dc701e3f89fdef71e1e1510b101cafaf28546bdfe",
+      "byte_identical": true
+    },
+    "omni_drones/envs/single/nav_acc_sim_pilot.py": {
+      "source_path": "omni_drones/envs/single/nav_acc_sim_pilot.py",
+      "source_sha256": "c7e5ac3f64e56b0f16a49b27a3b0b55d469d1ea2ea9cc88cc0c478d0618c74f0",
+      "current_sha256": "c7e5ac3f64e56b0f16a49b27a3b0b55d469d1ea2ea9cc88cc0c478d0618c74f0",
+      "byte_identical": true
+    },
+    "omni_drones/envs/utils/__init__.py": {
+      "source_path": "omni_drones/envs/utils/__init__.py",
+      "source_sha256": "efb2a16c780d7ba11a295ea82cebfe4adddadb8a51a071d4cc31bd3449f2de09",
+      "current_sha256": "efb2a16c780d7ba11a295ea82cebfe4adddadb8a51a071d4cc31bd3449f2de09",
+      "byte_identical": true
+    },
+    "omni_drones/learning/__init__.py": {
+      "source_path": "omni_drones/learning/__init__.py",
+      "source_sha256": "d9bfc3ff81296e4900da74d56420e93b8dc91d2d7867b56bf3a6f77447959e2c",
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "byte_identical": false
+    },
+    "omni_drones/learning/modules/__init__.py": {
+      "source_path": null,
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "kind": "new portable integration/resource"
+    },
+    "omni_drones/learning/modules/distributions.py": {
+      "source_path": "omni_drones/learning/modules/distributions.py",
+      "source_sha256": "d42e5a2aa8536d8d8d884fe34c5076acbbd87dffd2cbab85971918b1cb3e9228",
+      "current_sha256": "d42e5a2aa8536d8d8d884fe34c5076acbbd87dffd2cbab85971918b1cb3e9228",
+      "byte_identical": true
+    },
+    "omni_drones/learning/ppo/__init__.py": {
+      "source_path": "omni_drones/learning/ppo/__init__.py",
+      "source_sha256": "89cb12b8a44a607285db424e4048b532ba446205033e2ef81c5964ea1f087bf8",
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "byte_identical": false
+    },
+    "omni_drones/learning/ppo/common.py": {
+      "source_path": "omni_drones/learning/ppo/common.py",
+      "source_sha256": "b7b2b726daad8fe0e2142180eeeb43e659ce04fef098b0062a878068aad871e1",
+      "current_sha256": "b7b2b726daad8fe0e2142180eeeb43e659ce04fef098b0062a878068aad871e1",
+      "byte_identical": true
+    },
+    "omni_drones/learning/ppo/navacc_smooth_std.py": {
+      "source_path": "omni_drones/learning/ppo/navacc_smooth_std.py",
+      "source_sha256": "b5dd9c4c9e67cf9245ff293689281037360dbe72aba651cca8ee4658683fd887",
+      "current_sha256": "b5dd9c4c9e67cf9245ff293689281037360dbe72aba651cca8ee4658683fd887",
+      "byte_identical": true
+    },
+    "omni_drones/learning/ppo/navacc_v4_structured.py": {
+      "source_path": "omni_drones/learning/ppo/navacc_v4_structured.py",
+      "source_sha256": "cb6f5684b94338853227d58c78afe861879d91644526e5dbdbfe15ac4b38032a",
+      "current_sha256": "cb6f5684b94338853227d58c78afe861879d91644526e5dbdbfe15ac4b38032a",
+      "byte_identical": true
+    },
+    "omni_drones/learning/ppo/ppo.py": {
+      "source_path": "omni_drones/learning/ppo/ppo.py",
+      "source_sha256": "fac7e964da1ed6d503ebd8f06ea1114018856a2bc234f538499defdf44c5d701",
+      "current_sha256": "fac7e964da1ed6d503ebd8f06ea1114018856a2bc234f538499defdf44c5d701",
+      "byte_identical": true
+    },
+    "omni_drones/learning/utils/__init__.py": {
+      "source_path": null,
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "kind": "new portable integration/resource"
+    },
+    "omni_drones/learning/utils/valuenorm.py": {
+      "source_path": "omni_drones/learning/utils/valuenorm.py",
+      "source_sha256": "106a80b46ec14f2118e272cdefada8b62cd5d369a868b837346deadc48f1f40a",
+      "current_sha256": "106a80b46ec14f2118e272cdefada8b62cd5d369a868b837346deadc48f1f40a",
+      "byte_identical": true
+    },
+    "omni_drones/robots/__init__.py": {
+      "source_path": "omni_drones/robots/__init__.py",
+      "source_sha256": "0818b0749049642c18fc9d5a7b83c8af2abcc22f19a88c7a3efd10fc002dc14c",
+      "current_sha256": "684a4a6be6771bf7c7637328600a4fc3b314dd5e1f39be7305489ac3509147a6",
+      "byte_identical": false
+    },
+    "omni_drones/robots/assets/usd/cf2x_pybullet.usd": {
+      "source_path": "omni_drones/robots/assets/usd/cf2x_pybullet.usd",
+      "source_sha256": "8dcb9f2455722cd8f6f1489a00e0f2609efa039db7d48a45f1290fa86c1d17b4",
+      "current_sha256": "8dcb9f2455722cd8f6f1489a00e0f2609efa039db7d48a45f1290fa86c1d17b4",
+      "byte_identical": true
+    },
+    "omni_drones/robots/assets/usd/crazyflie.yaml": {
+      "source_path": "omni_drones/robots/assets/usd/crazyflie.yaml",
+      "source_sha256": "6f93dec5be03cc892def4e206fe515e79888f10337f55d03333e7d8196ae04ed",
+      "current_sha256": "6f93dec5be03cc892def4e206fe515e79888f10337f55d03333e7d8196ae04ed",
+      "byte_identical": true
+    },
+    "omni_drones/robots/assets/usd/crazyflie_brushless_paper_damped_v1.usda": {
+      "source_path": "omni_drones/robots/assets/usd/crazyflie_brushless_paper_damped_v1.usda",
+      "source_sha256": "d26a6f3c39ac1d2531d9116ccc426ac35876b20b531490d4a39e9519af25b2cc",
+      "current_sha256": "d26a6f3c39ac1d2531d9116ccc426ac35876b20b531490d4a39e9519af25b2cc",
+      "byte_identical": true
+    },
+    "omni_drones/robots/assets/usd/crazyflie_brushless_paper_damped_v1.yaml": {
+      "source_path": "omni_drones/robots/assets/usd/crazyflie_brushless_paper_damped_v1.yaml",
+      "source_sha256": "d21c263eb5f20e3fa7bd85f5b3d0d9b96b208af64da8f6cbf1b9cca2ad1b7b14",
+      "current_sha256": "d21c263eb5f20e3fa7bd85f5b3d0d9b96b208af64da8f6cbf1b9cca2ad1b7b14",
+      "byte_identical": true
+    },
+    "omni_drones/robots/assets/usd/crazyflie_brushless_paper_v1.usda": {
+      "source_path": "omni_drones/robots/assets/usd/crazyflie_brushless_paper_v1.usda",
+      "source_sha256": "e32a49734dbd104be6c0f213f6050f967ba94c36e733db25c8318c78579bc8b6",
+      "current_sha256": "e32a49734dbd104be6c0f213f6050f967ba94c36e733db25c8318c78579bc8b6",
+      "byte_identical": true
+    },
+    "omni_drones/robots/assets/usd/crazyflie_brushless_paper_v1.yaml": {
+      "source_path": "omni_drones/robots/assets/usd/crazyflie_brushless_paper_v1.yaml",
+      "source_sha256": "b472a757493c87a0a081e5f8fc06e6f05f2bd2c4f07de1011962aefdd9df9b89",
+      "current_sha256": "b472a757493c87a0a081e5f8fc06e6f05f2bd2c4f07de1011962aefdd9df9b89",
+      "byte_identical": true
+    },
+    "omni_drones/robots/config.py": {
+      "source_path": "omni_drones/robots/config.py",
+      "source_sha256": "0a079dfb4c2f035c0ac2c8e4ac89817b0480ee4e7639a8faffddfdfbda8999ad",
+      "current_sha256": "0a079dfb4c2f035c0ac2c8e4ac89817b0480ee4e7639a8faffddfdfbda8999ad",
+      "byte_identical": true
+    },
+    "omni_drones/robots/drone/__init__.py": {
+      "source_path": "omni_drones/robots/drone/__init__.py",
+      "source_sha256": "dfd69de7f8d1f071bc9fe1f9e9c713bf23859019f9203c8ab6d233c81ae9f668",
+      "current_sha256": "9671fc052f166627587e72f22960d5dd559e56dce1441c94a3ff3e392284515d",
+      "byte_identical": false
+    },
+    "omni_drones/robots/drone/crazyflie.py": {
+      "source_path": "omni_drones/robots/drone/crazyflie.py",
+      "source_sha256": "b6aa25b5cebcde482bb80ea0c430ca1438941a66e50ee116e65c363c6eae01d9",
+      "current_sha256": "b6aa25b5cebcde482bb80ea0c430ca1438941a66e50ee116e65c363c6eae01d9",
+      "byte_identical": true
+    },
+    "omni_drones/robots/drone/crazyflie_brushless_paper_damped_v1.py": {
+      "source_path": "omni_drones/robots/drone/crazyflie_brushless_paper_damped_v1.py",
+      "source_sha256": "7baa2468a869a69729757df8040de222b8960d0dad1c365d0b3f7ac35c36b240",
+      "current_sha256": "7baa2468a869a69729757df8040de222b8960d0dad1c365d0b3f7ac35c36b240",
+      "byte_identical": true
+    },
+    "omni_drones/robots/drone/crazyflie_brushless_paper_v1.py": {
+      "source_path": "omni_drones/robots/drone/crazyflie_brushless_paper_v1.py",
+      "source_sha256": "7d4cd8739075ad905a19dfe1bfa2360cb6d0ff3e461e08c2a45e8f657f1261f3",
+      "current_sha256": "7d4cd8739075ad905a19dfe1bfa2360cb6d0ff3e461e08c2a45e8f657f1261f3",
+      "byte_identical": true
+    },
+    "omni_drones/robots/drone/multirotor.py": {
+      "source_path": "omni_drones/robots/drone/multirotor.py",
+      "source_sha256": "060ef8562078511f9d1a4ac53919ae6cd98383a0c9b7c8653033e9bb5e1873c2",
+      "current_sha256": "060ef8562078511f9d1a4ac53919ae6cd98383a0c9b7c8653033e9bb5e1873c2",
+      "byte_identical": true
+    },
+    "omni_drones/robots/robot.py": {
+      "source_path": "omni_drones/robots/robot.py",
+      "source_sha256": "7d88cb14c7ba02b7e74d3c7127cb1ba2e764be8c59685f0765b551ac13a4855c",
+      "current_sha256": "7d88cb14c7ba02b7e74d3c7127cb1ba2e764be8c59685f0765b551ac13a4855c",
+      "byte_identical": true
+    },
+    "omni_drones/utils/__init__.py": {
+      "source_path": "omni_drones/utils/__init__.py",
+      "source_sha256": "881e6ffda43aa13baa74ecb52c1a32c32c5fa318c90a6175f0a80af19916805f",
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "byte_identical": false
+    },
+    "omni_drones/utils/articulation_mass_contract.py": {
+      "source_path": "omni_drones/utils/articulation_mass_contract.py",
+      "source_sha256": "5c3fe440b3c62abe209c0027138af009b25fa0e06113ab8c8627839a21d442ca",
+      "current_sha256": "5c3fe440b3c62abe209c0027138af009b25fa0e06113ab8c8627839a21d442ca",
+      "byte_identical": true
+    },
+    "omni_drones/utils/kit.py": {
+      "source_path": "omni_drones/utils/kit.py",
+      "source_sha256": "d47d9fd49c01c900a20959d20dffbfe9d8ec15aa6197d42c5b797aefd1d3b1c5",
+      "current_sha256": "d47d9fd49c01c900a20959d20dffbfe9d8ec15aa6197d42c5b797aefd1d3b1c5",
+      "byte_identical": true
+    },
+    "omni_drones/utils/navacc_c3bf_rows_v2.py": {
+      "source_path": "omni_drones/utils/navacc_c3bf_rows_v2.py",
+      "source_sha256": "16695fd8f074e3a68aeecf23e03d3504569edc09db7616d06ff8e4b4a025c2b1",
+      "current_sha256": "16695fd8f074e3a68aeecf23e03d3504569edc09db7616d06ff8e4b4a025c2b1",
+      "byte_identical": true
+    },
+    "omni_drones/utils/navacc_c3bf_solvers_v2.py": {
+      "source_path": "omni_drones/utils/navacc_c3bf_solvers_v2.py",
+      "source_sha256": "1b4946174c5c2d78886cc00d085182057a7cac1e74e65de124d35816a4eb0b57",
+      "current_sha256": "1b4946174c5c2d78886cc00d085182057a7cac1e74e65de124d35816a4eb0b57",
+      "byte_identical": true
+    },
+    "omni_drones/utils/privileged_critic.py": {
+      "source_path": "omni_drones/utils/privileged_critic.py",
+      "source_sha256": "ff0d58b46dd374aed9850b5a1636ab4013b6bd7dac40ba898eb358aa93e60f4b",
+      "current_sha256": "ff0d58b46dd374aed9850b5a1636ab4013b6bd7dac40ba898eb358aa93e60f4b",
+      "byte_identical": true
+    },
+    "omni_drones/utils/scene.py": {
+      "source_path": "omni_drones/utils/scene.py",
+      "source_sha256": "3f66bbcc11876883bdaff024094448f982aab94f0b56cab275338068cd7b4bfa",
+      "current_sha256": "3f66bbcc11876883bdaff024094448f982aab94f0b56cab275338068cd7b4bfa",
+      "byte_identical": true
+    },
+    "omni_drones/utils/tensordict_compat.py": {
+      "source_path": "omni_drones/utils/tensordict_compat.py",
+      "source_sha256": "d394fd351e7a74941bec1e5e0c9fa8d4545f663637001377be13066cc37eb6bc",
+      "current_sha256": "d394fd351e7a74941bec1e5e0c9fa8d4545f663637001377be13066cc37eb6bc",
+      "byte_identical": true
+    },
+    "omni_drones/utils/torch.py": {
+      "source_path": "omni_drones/utils/torch.py",
+      "source_sha256": "c63b3db4ae2d1840e2dc8bb5538bd118529c3932cf73267a8ce4765a71041bde",
+      "current_sha256": "c63b3db4ae2d1840e2dc8bb5538bd118529c3932cf73267a8ce4765a71041bde",
+      "byte_identical": true
+    },
+    "omni_drones/utils/torchrl/__init__.py": {
+      "source_path": "omni_drones/utils/torchrl/__init__.py",
+      "source_sha256": "c79ec6012dd7a5f1f981d20be3799bf08d31bfa549cb1131469e199076e868a2",
+      "current_sha256": "aa691b02e0a9c713de6b448595f955d4340412abe478641834676c7fd06af70e",
+      "byte_identical": false
+    },
+    "omni_drones/utils/torchrl/collector.py": {
+      "source_path": "omni_drones/utils/torchrl/collector.py",
+      "source_sha256": "b25f42bc728d47beccb0c117539adba70ca0b93cabf556a1e04a3717f5ba52f7",
+      "current_sha256": "b25f42bc728d47beccb0c117539adba70ca0b93cabf556a1e04a3717f5ba52f7",
+      "byte_identical": true
+    },
+    "omni_drones/utils/torchrl/compat.py": {
+      "source_path": "omni_drones/utils/torchrl/compat.py",
+      "source_sha256": "b9b27a108603d086f10aff7866ba1c105e60fa64ceef5f01e62667853af7edc9",
+      "current_sha256": "b9b27a108603d086f10aff7866ba1c105e60fa64ceef5f01e62667853af7edc9",
+      "byte_identical": true
+    },
+    "omni_drones/utils/torchrl/env.py": {
+      "source_path": "omni_drones/utils/torchrl/env.py",
+      "source_sha256": "57b7add92d97e12748e08a36ed82112ff3807d3af6fd20feb5f7a60bdadd462f",
+      "current_sha256": "57b7add92d97e12748e08a36ed82112ff3807d3af6fd20feb5f7a60bdadd462f",
+      "byte_identical": true
+    },
+    "omni_drones/utils/torchrl/transforms.py": {
+      "source_path": "omni_drones/utils/torchrl/transforms.py",
+      "source_sha256": "4dbb4e4e1c7ac1478965988efa0cc5fcde93a32122273b40007d8506efff64e1",
+      "current_sha256": "4dbb4e4e1c7ac1478965988efa0cc5fcde93a32122273b40007d8506efff64e1",
+      "byte_identical": true
+    },
+    "omni_drones/views/__init__.py": {
+      "source_path": "omni_drones/views/__init__.py",
+      "source_sha256": "b9a0956f351b209b0bbdffcd907c05a086e4f9bc80e01251f2db7f4ff678035b",
+      "current_sha256": "b9a0956f351b209b0bbdffcd907c05a086e4f9bc80e01251f2db7f4ff678035b",
+      "byte_identical": true
+    },
+    "resources/action_noise_oracles.json": {
+      "source_path": null,
+      "current_sha256": "1093b86235411a4062e0543c87b3c2639c09d3284272e2d0a7f010971ac67142",
+      "kind": "new portable integration/resource"
+    },
+    "resources/numeric_regression.json": {
+      "source_path": null,
+      "current_sha256": "9cc0299fb0b32dbbaa9b6d7166f41cf814129df33175d076a2b6107a84ee61f3",
+      "kind": "new portable integration/resource"
+    },
+    "resources/parity_observations.pt": {
+      "source_path": null,
+      "current_sha256": "4ce0475c9345ff7df4837eda948e8dae1ac2652e347d3778360124624d0ffc84",
+      "kind": "new portable integration/resource"
+    },
+    "resources/s280d50/eval/contract.json": {
+      "source_path": null,
+      "current_sha256": "d46bb75fc0a413a483f3ac856707c5f7eb21619194d3276e1234c1609f1e8248",
+      "kind": "new portable integration/resource"
+    },
+    "resources/s280d50/eval/requests.json": {
+      "source_path": null,
+      "current_sha256": "48cf37dc68359db482bedf6236cf3258448b9de9ec1e579e0a8c7f52b0ad78e3",
+      "kind": "new portable integration/resource"
+    },
+    "resources/s280d50/eval/scene.json": {
+      "source_path": null,
+      "current_sha256": "8ddf9e4c5f824fb3960c60db2840f9eff2140d06f340021ad03785d1d815641b",
+      "kind": "new portable integration/resource"
+    },
+    "resources/s280d50/train/contract.json": {
+      "source_path": null,
+      "current_sha256": "7c8408cd8d65708645329e63782d30e6c76c4f387e1d1647d584ce487be16855",
+      "kind": "new portable integration/resource"
+    },
+    "resources/s280d50/train/requests.json": {
+      "source_path": null,
+      "current_sha256": "6e419675d395490de7a3c68e41f8f96ce1e774bb552e4f9b12a0b6f102f2ae05",
+      "kind": "new portable integration/resource"
+    },
+    "resources/s280d50/train/scene.json": {
+      "source_path": null,
+      "current_sha256": "ca4b68c43ada16f3db2acd4a537f14c846db7d04b961d18286a83f1aa1a56f7e",
+      "kind": "new portable integration/resource"
+    },
+    "scripts/__init__.py": {
+      "source_path": null,
+      "current_sha256": "e32675580ea6fdc07b26af0dd3e5d045cca53e134b6adc414b5e88ac5cbe5973",
+      "kind": "new portable integration/resource"
+    },
+    "scripts/navacc_correction_eval_metrics.py": {
+      "source_path": "scripts/navacc_correction_eval_metrics.py",
+      "source_sha256": "eb426f5e51a3fa8bd9003fcc3c149f301368a9077baf62858fe1484b472f1af6",
+      "current_sha256": "eb426f5e51a3fa8bd9003fcc3c149f301368a9077baf62858fe1484b472f1af6",
+      "byte_identical": true
+    },
+    "scripts/navacc_engineering.py": {
+      "source_path": "scripts/navacc_engineering.py",
+      "source_sha256": "106f9d4cb2689281a782bf042d8e32f21dca29e998f3267b338382425e8e3dac",
+      "current_sha256": "51128e28275be3108f4b81f3d12dcc1c4267ddfb559cd2141663deedf4a55af6",
+      "byte_identical": false
+    },
+    "scripts/navacc_goal_curriculum.py": {
+      "source_path": "scripts/navacc_goal_curriculum.py",
+      "source_sha256": "15f1766e95d076ad975fd52415d61e53df9a2f3107f7d827bf556abe99d684a5",
+      "current_sha256": "06fe1b3d75899c6903b0ed14400faac7d230e8fd29895ed5d77d0ca3e2147a6e",
+      "byte_identical": false
+    },
+    "scripts/navacc_goal_frame.py": {
+      "source_path": "scripts/navacc_goal_frame.py",
+      "source_sha256": "b7405936b6e7215d1be686f3a0f49c88d7dae0634a9dceafbc1b65372c7598cd",
+      "current_sha256": "b7405936b6e7215d1be686f3a0f49c88d7dae0634a9dceafbc1b65372c7598cd",
+      "byte_identical": true
+    },
+    "scripts/navacc_goal_frame_profile.py": {
+      "source_path": "scripts/navacc_goal_frame_profile.py",
+      "source_sha256": "d2da969a20881b93fe39af8b78224d7935821615369a9a753c6a456e79d381c9",
+      "current_sha256": "0e22f72758b7c403cf6c9c57ddda49bd6f57393248fb561aa0f0f5c58fcf3e2b",
+      "byte_identical": false
+    },
+    "scripts/navacc_hold30_continuous.py": {
+      "source_path": "scripts/navacc_hold30_continuous.py",
+      "source_sha256": "83734bb3a1728b11658eece24acff362a5bac033fd78843344c3c18d42d0911e",
+      "current_sha256": "5fb942a3bab85400cb5ffc75e04164619ba8c8962471413b68667f49c148a053",
+      "byte_identical": false
+    },
+    "scripts/navacc_hold30_transition.py": {
+      "source_path": "scripts/navacc_hold30_transition.py",
+      "source_sha256": "67e6e112b9e771781eff6f0a81fbfbb2a8d994946449e1ab3ad6cef528a4749f",
+      "current_sha256": "2fc46ebcc549dedc8a38564ea3c2623fff2e719e47f054d89fda9cb18177dcc5",
+      "byte_identical": false
+    },
+    "scripts/navacc_hold50_continuous.py": {
+      "source_path": "scripts/navacc_hold50_continuous.py",
+      "source_sha256": "89642d8731f964ebec91af90be1799afd34c46255fe78764828472f9f6e5ab91",
+      "current_sha256": "b6d63b3dd8e98d80665867560be8a2ba2eb887bd05810a9265546cdf93c4d126",
+      "byte_identical": false
+    },
+    "scripts/navacc_large_map.py": {
+      "source_path": "scripts/navacc_large_map.py",
+      "source_sha256": "763c5cd383e8bf4ac7e8ae7e5b274b17cdf25675bb1a89f141f2f829be05bc60",
+      "current_sha256": "763c5cd383e8bf4ac7e8ae7e5b274b17cdf25675bb1a89f141f2f829be05bc60",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_batched.py": {
+      "source_path": "scripts/navacc_large_map_batched.py",
+      "source_sha256": "7889cdf4b1428f8b90b694b90e247957956e71c057d4efb3858b186175c693fd",
+      "current_sha256": "7889cdf4b1428f8b90b694b90e247957956e71c057d4efb3858b186175c693fd",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_env.py": {
+      "source_path": "scripts/navacc_large_map_env.py",
+      "source_sha256": "80db1841fd2b3e5ffdc4bb3e8ddb871ad65c596c9fe5d0e0e7a5058cfce3fd73",
+      "current_sha256": "08388e8577a1807227c80422d880b1dbceaa00cee035f75a81f267aff96c9503",
+      "byte_identical": false
+    },
+    "scripts/navacc_large_map_hold48.py": {
+      "source_path": "scripts/navacc_large_map_hold48.py",
+      "source_sha256": "0f2c4a5440daa2347f97da1bbc4d7cb1afcaeaaa0bee051b1b03273d993b170b",
+      "current_sha256": "245732e11e8a9a92b41e02732c9705689221660d26c6b8fe4a438e6044904fe1",
+      "byte_identical": false
+    },
+    "scripts/navacc_large_map_local_ground.py": {
+      "source_path": "scripts/navacc_large_map_local_ground.py",
+      "source_sha256": "cba5dab4de68c4c355f0bd44aef684bafc5248d88bafdd43a22d502704a706fc",
+      "current_sha256": "cba5dab4de68c4c355f0bd44aef684bafc5248d88bafdd43a22d502704a706fc",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_planar_backend.py": {
+      "source_path": "scripts/navacc_large_map_planar_backend.py",
+      "source_sha256": "6e7514898f30562512c9a808eac885301d79eeb6c89e25bdabb327313836f74f",
+      "current_sha256": "6e7514898f30562512c9a808eac885301d79eeb6c89e25bdabb327313836f74f",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_planar_c3bf.py": {
+      "source_path": "scripts/navacc_large_map_planar_c3bf.py",
+      "source_sha256": "4c7896e6257ac37afb81628b37c6a9e5821b0aae0cabc569a8565f929ee296b7",
+      "current_sha256": "4c7896e6257ac37afb81628b37c6a9e5821b0aae0cabc569a8565f929ee296b7",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_planar_encounters.py": {
+      "source_path": "scripts/navacc_large_map_planar_encounters.py",
+      "source_sha256": "c82a393ae5e278c506b59574fb481cf022ce3b50fc68eaf4a5405c2d9d605c8c",
+      "current_sha256": "c82a393ae5e278c506b59574fb481cf022ce3b50fc68eaf4a5405c2d9d605c8c",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_planar_env.py": {
+      "source_path": "scripts/navacc_large_map_planar_env.py",
+      "source_sha256": "4e7191a18ff51ea746b40be9c2d8f971bdf75f38759d0bd90cb787491149841d",
+      "current_sha256": "2ef3f8819d6bf678d7e8e15d9b8e4236c8e30e2fccd72e0fca59e148575a84b0",
+      "byte_identical": false
+    },
+    "scripts/navacc_large_map_planar_guidance.py": {
+      "source_path": "scripts/navacc_large_map_planar_guidance.py",
+      "source_sha256": "c4e3fe94bf28002b7dff16e0a02f7449b90905d0b9b17bf19d3c38efd25d8862",
+      "current_sha256": "c4e3fe94bf28002b7dff16e0a02f7449b90905d0b9b17bf19d3c38efd25d8862",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_planar_obs20.py": {
+      "source_path": "scripts/navacc_large_map_planar_obs20.py",
+      "source_sha256": "90f5abd28b3019312ac72a6e0959f0e2f839a19221f717cb01dc3e78f31fdd85",
+      "current_sha256": "e7da34a60c499789ec63a7d3e9fa87afddae6b0b0d1d5da01f08bd543485f17e",
+      "byte_identical": false
+    },
+    "scripts/navacc_large_map_planar_policy.py": {
+      "source_path": "scripts/navacc_large_map_planar_policy.py",
+      "source_sha256": "3a5d57d12974c1364d437cd2f23df805cfcbb7747e9e29a7269feb383838e6bd",
+      "current_sha256": "b4cfc9f96e3af8c85ec32c1081825757a80c7c21414e2145cebb1368b72224e2",
+      "byte_identical": false
+    },
+    "scripts/navacc_large_map_planar_reward.py": {
+      "source_path": "scripts/navacc_large_map_planar_reward.py",
+      "source_sha256": "1bf1cce2a343e59386f935c7b11276ff346ec7cab2778c3266b3e1678e66a2d0",
+      "current_sha256": "1bf1cce2a343e59386f935c7b11276ff346ec7cab2778c3266b3e1678e66a2d0",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_planar_sampling3m.py": {
+      "source_path": "scripts/navacc_large_map_planar_sampling3m.py",
+      "source_sha256": "0daf675abee570e9413b4a55964259188efa7fe3cac60939cfe52e98055077e7",
+      "current_sha256": "996b3636347d026ee39cf703025acfa6aea2a5f90edd1c3438edd6bbec7c3a21",
+      "byte_identical": false
+    },
+    "scripts/navacc_large_map_planar_scene.py": {
+      "source_path": "scripts/navacc_large_map_planar_scene.py",
+      "source_sha256": "e296ea76d4cc665cfd9f78e97538be57fe69a873371a8cb9a824d985dcbcd2ca",
+      "current_sha256": "e296ea76d4cc665cfd9f78e97538be57fe69a873371a8cb9a824d985dcbcd2ca",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_planar_training.py": {
+      "source_path": "scripts/navacc_large_map_planar_training.py",
+      "source_sha256": "5b03a8e7201ffbce3063686e50da9ed783108be01df7c4b2ab2c62442348ec76",
+      "current_sha256": "5b03a8e7201ffbce3063686e50da9ed783108be01df7c4b2ab2c62442348ec76",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_planar_unbounded.py": {
+      "source_path": "scripts/navacc_large_map_planar_unbounded.py",
+      "source_sha256": "3828ea51abe4accdf4c1fa0e67952268ee5da3dfd50fe29aed9f99acb7733c88",
+      "current_sha256": "3828ea51abe4accdf4c1fa0e67952268ee5da3dfd50fe29aed9f99acb7733c88",
+      "byte_identical": true
+    },
+    "scripts/navacc_large_map_zero_contract.py": {
+      "source_path": "scripts/navacc_large_map_zero_contract.py",
+      "source_sha256": "0119ec38c27649174526a5e1d5d4ce9b06f58e090b161d9b2cebe6bbb6dfe464",
+      "current_sha256": "0119ec38c27649174526a5e1d5d4ce9b06f58e090b161d9b2cebe6bbb6dfe464",
+      "byte_identical": true
+    },
+    "scripts/navacc_obstacle_course_state.py": {
+      "source_path": "scripts/navacc_obstacle_course_state.py",
+      "source_sha256": "c0c8a30c6761105cd9e0a3579dd6f67f2325ce5fc203ce7577411e92b6bf89d7",
+      "current_sha256": "c0c8a30c6761105cd9e0a3579dd6f67f2325ce5fc203ce7577411e92b6bf89d7",
+      "byte_identical": true
+    },
+    "scripts/navacc_primary_action_bounds.py": {
+      "source_path": "scripts/navacc_primary_action_bounds.py",
+      "source_sha256": "61499d84dba7298078e5d1b0c752ef0e7101fa1e8bddea1052fa4bee13992d6d",
+      "current_sha256": "61499d84dba7298078e5d1b0c752ef0e7101fa1e8bddea1052fa4bee13992d6d",
+      "byte_identical": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# Reference environment only; Isaac/CUDA installed separately. Do not blindly upgrade.
+torch==2.7.0+cu128
+torchrl==0.11.1
+tensordict==0.11.0
+numpy==1.26.0
+omegaconf==2.3.1
+hydra-core==1.3.6
+einops==0.8.2
+# Optional logging/tests:
+wandb==0.29.0
+pytest==9.1.1
+# isaacsim==5.1.0.0 (NVIDIA runtime, separate licensed installation)

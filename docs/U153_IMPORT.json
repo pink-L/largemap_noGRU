@@ -1,0 +1,28 @@
+{
+  "path": "/home/lz/lzspace/experiment_artifacts/largemap_noGRU_20261022/preparation/u153_portable_final.pt",
+  "sha256": "15778ee87bcc5df287597919957d14631ed6e65ca948ac308667d8017580fcfd",
+  "ledger": {
+    "local_updates": 0,
+    "local_frames": 0,
+    "source_displayed_frames": 265906176
+  },
+  "status": "PASS",
+  "source_sha256": "76ceb7d6f85c46a8694d7fe638b38f1da3bb1337e3e0d41a6daaebdaaf7df527",
+  "policy_tensor_count": 63,
+  "policy_sha256": "76c4f0a0520cacf99e259c7386f0b58b5950eaafdbece187dc47c022c2b98c3e",
+  "optimizers": {
+    "actor": {
+      "named_parameters": 30,
+      "steps": [
+        68608.0
+      ]
+    },
+    "critic": {
+      "named_parameters": 28,
+      "steps": [
+        78592.0
+      ]
+    }
+  },
+  "proof": "Exact approved source bytes; strict model+both named Adam moments; VN/GAE included in63 tensors. Not an old whole-runtime or performance replay."
+}

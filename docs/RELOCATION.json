@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "stdout": "{\"status\": \"PASS\", \"policy_tensors\": 63, \"archive_reads_attempted\": [], \"source_files\": 105, \"root\": \"/tmp/largemap_no_gru_relocation_d6dvfueg/project\"}\n",
+  "stderr": "",
+  "purpose": "Normal imports/model/resources at unrelated path with archive open() denied; source-only checkout"
+}

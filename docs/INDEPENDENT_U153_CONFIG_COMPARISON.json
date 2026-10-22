@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "source_checkpoint_sha256": "76ceb7d6f85c46a8694d7fe638b38f1da3bb1337e3e0d41a6daaebdaaf7df527",
+  "source_config_key": "identity.training_config",
+  "portable_baseline_sha256": "0f1862939d9bfe360e0f87d42e8324b4b505f1f6ca63cff90897f3824a27db0f",
+  "shared_leaf_fields": 435,
+  "differences": [
+    {
+      "key": ".algo.goal_curriculum_schema",
+      "source": "navacc_action_bounds_bcd_20m_split10m_v1",
+      "portable": "largemap_no_gru_v1"
+    },
+    {
+      "key": ".task.large_map.course_context.historical_through_ordinal",
+      "source": 147,
+      "portable": -1
+    },
+    {
+      "key": ".task.large_map.course_context.phase_id",
+      "source": "bounds_B",
+      "portable": "portable"
+    },
+    {
+      "key": ".task.large_map.goal_curriculum_schema",
+      "source": "navacc_action_bounds_bcd_20m_split10m_v1",
+      "portable": "largemap_no_gru_v1"
+    },
+    {
+      "key": ".task.large_map.mass_schema",
+      "source": "single_effective_rigid_body_brushless_paper_v1",
+      "portable": "singlebody_total_mass_v1"
+    },
+    {
+      "key": ".task.large_map.scene_path",
+      "source": "/home/lz/lzspace/experiment_artifacts/navacc_overnight_three_stage60M_from140M_20261020/scene_suites/S280D50/training/time32/scene.json",
+      "portable": "/home/lz/lzspace/experiment_artifacts/largemap_noGRU_20261022/repository/resources/s280d50/train/scene.json"
+    },
+    {
+      "key": ".task.name",
+      "source": "NavAccOvernight80TrainV1",
+      "portable": "LargeMapNoGRU"
+    }
+  ],
+  "scope": "Independent reviewer recursively compared all shared fields, including lists; differences are identity/path/context changes only. Does not claim equality of removed campaign fields or new portable metadata."
+}

@@ -1,0 +1,13 @@
+name: crazyflie_brushless_paper_damped_v1
+profile: brushless_paper_reference_damping02_v1
+mass: 0.042
+inertia: {xx: 0.000033, xy: 0.0, xz: 0.0, yy: 0.000036, yz: 0.0, zz: 0.000059}
+drag_coef: 0.0
+update_sim: false
+rotor_configuration:
+  num_rotors: 4
+  directions: [-1.0, 1.0, -1.0, 1.0]
+  sites_m: [[0.03535, 0.03535, 0.0], [-0.03535, 0.03535, 0.0], [-0.03535, -0.03535, 0.0], [0.03535, -0.03535, 0.0]]
+  omega_max_rad_s: 2900.0
+  time_constant: 0.05
+  motor_inertia_kg_m2: 0.00000005

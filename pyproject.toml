@@ -1,0 +1,12 @@
+[build-system]
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+[project]
+name="largemap-no-gru"
+version="0.1.0"
+description="Independent feed-forward PPO navigation with brushless Crazyflie backend"
+requires-python=">=3.10,<3.12"
+[tool.setuptools.packages.find]
+include=["largemap_no_gru*","omni_drones*","scripts*"]
+[tool.setuptools.package-data]
+"omni_drones"=["robots/assets/usd/*","controllers/cfg/*.yaml"]
